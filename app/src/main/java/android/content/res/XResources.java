@@ -26,23 +26,23 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.WeakHashMap;
 
-import de.robv.android.xposed.IXposedHookZygoteInit;
-import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XC_MethodHook.MethodHookParam;
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
-import de.robv.android.xposed.callbacks.XC_LayoutInflated;
-import de.robv.android.xposed.callbacks.XC_LayoutInflated.LayoutInflatedParam;
-import de.robv.android.xposed.callbacks.XCallback;
-import xposed.dummy.XResourcesSuperClass;
-import xposed.dummy.XTypedArraySuperClass;
+import com.google.android.x.IXposedHookZygoteInit;
+import com.google.android.x.XC_MethodHook;
+import com.google.android.x.XC_MethodHook.MethodHookParam;
+import com.google.android.x.XposedBridge;
+import com.google.android.x.XposedBridge.CopyOnWriteSortedSet;
+import com.google.android.x.callbacks.XC_LayoutInflated;
+import com.google.android.x.callbacks.XC_LayoutInflated.LayoutInflatedParam;
+import com.google.android.x.callbacks.XCallback;
+import xx.dd.XResourcesSuperClass;
+import xx.dd.XTypedArraySuperClass;
 
-import static de.robv.android.xposed.XposedHelpers.decrementMethodDepth;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
-import static de.robv.android.xposed.XposedHelpers.getIntField;
-import static de.robv.android.xposed.XposedHelpers.getLongField;
-import static de.robv.android.xposed.XposedHelpers.getObjectField;
-import static de.robv.android.xposed.XposedHelpers.incrementMethodDepth;
+import static com.google.android.x.XposedHelpers.decrementMethodDepth;
+import static com.google.android.x.XposedHelpers.findAndHookMethod;
+import static com.google.android.x.XposedHelpers.getIntField;
+import static com.google.android.x.XposedHelpers.getLongField;
+import static com.google.android.x.XposedHelpers.getObjectField;
+import static com.google.android.x.XposedHelpers.incrementMethodDepth;
 
 /**
  * {@link android.content.res.Resources} subclass that allows replacing individual resources.
